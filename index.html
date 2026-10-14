@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Dasdboard </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Build a Student Result Dashboard using HTML and CSS only.
+Your dashboard should contain:
+A header with the title Student Result Dashboard
+Student information:
+Name
+Student ID
+Programme
+-->
+<header class="header">
+    <div class="container">
+        <h1>Student Result Dasdboard</h1>
+        <p>Academic performance overview</p>
+        
+    </div>
+</header>
+<main class="container">
+    <!--student info-->
+    <section class="student-section">
+    <h2>Student Information</h2>
+
+<div class="student-info">
+
+    <div class="info-item">
+        <span>Student Name</span>
+        <strong id="student-name">Loading...</strong>
+    </div>
+
+    <div class="info-item">
+        <span>Student ID</span>
+        <strong id="student-id">Loading...</strong>
+    </div>
+
+    <div class="info-item">
+        <span>Programme</span>
+        <strong id="student-programme">Loading...</strong>
+    </div>
+
+</div>
+
+</section>
+
+    <!--course results,A Course Results section with at least 3 courses
+    Each course should show:
+    Course name
+    Score
+    Pass or Fail
+    -->
+<section class="results-section">
+    <h2>Course Results</h2>
+    <div id="course-container" class="course-grid">
+        <!--JS will add the course here-->
+    </div>
+</section>  
+
+<!--summary, A Result Summary section showing:
+    Total courses
+    Average score
+    Overall result-->
+   <section class="summary-section">
+    <h2>Result Summary</h2>
+
+
+<div class="summary-grid">
+
+    <div class="summary-card">
+        <span>Total Courses</span>
+        <strong id="total-courses">0</strong>
+    </div>
+
+    <div class="summary-card">
+        <span>Average Score</span>
+        <strong id="average-score">0%</strong>
+    </div>
+
+    <div class="summary-card">
+        <span>Overall Result</span>
+        <strong id="overall-result">Loading...</strong>
+    </div>
+</div>
+</section>
+
+</main>
+<footer><p>&copy; 2026 Student Result Dashboard</p></footer>
+
+<script src="scripts.js"></script>  
+</body>
+</html>
